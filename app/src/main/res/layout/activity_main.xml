@@ -9,336 +9,477 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <FrameLayout
+    <!-- ISI PROFILE YANG BISA DI-SCROLL -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
 
-        <!--Arrow back-->
-        <ImageView
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:layout_marginStart="14dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/baseline_arrow_back_24"/>
-
-        <!--Profile Tulisan-->
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Profile"
-            android:textColor="@color/white"
-            android:textSize="15dp"
-            android:gravity="center"/>
-    </FrameLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <!--  Gambar & Detail  -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginTop="12dp"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:background="#7B4AB5">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp">
 
-        <!--  Foto      -->
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/profilecard"
-            android:scaleType="centerCrop"
-            android:background="@drawable/circle_image"
-            android:clipToOutline="true"/>
+                <!--Arrow back-->
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_arrow_back_24"/>
 
-        <!--  Nama      -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:text="Albert Einstein"
-            android:textSize="13dp"
-            android:gravity="center"
-            android:textColor="@color/white"/>
+                <!--Profile Tulisan-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Profile"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+            </FrameLayout>
 
-        <!--  Bidang      -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="Ilmu Fisika dan Kebumian"
-            android:textSize="11dp"
-            android:gravity="center"
-            android:textColor="@color/white"/>
-    </LinearLayout>
-
-    <!--  Account Information  -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginTop="12dp"
-        android:background="#1d1d1d"
-        android:orientation="vertical"
-        android:padding="6dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="6dp"
-            android:gravity="center_vertical"
-            android:text="Account Information"
-            android:textSize="15dp"
-            android:textColor="@color/white"/>
-
+            <!--  Gambar & Detail  -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:background="#292929"
-                android:layout_marginBottom="5dp"
-                android:orientation="horizontal">
+                android:layout_height="140dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#7B4AB5">
+
+                <!--  Foto      -->
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/profilecard"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle_image"
+                    android:clipToOutline="true"/>
+
+                <!--  Nama      -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:text="Albert Einstein"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+
+                <!--  Bidang      -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Ilmu Fisika dan Kebumian"
+                    android:textSize="11dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <!--  Account Information  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="12dp"
+                android:background="#1d1d1d"
+                android:orientation="vertical"
+                android:padding="6dp">
 
                 <TextView
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:text="✉️"
-                    android:textSize="18dp"
-                    android:gravity="center"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Account Information"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:orientation="vertical"
-                    android:gravity="center_vertical">
+                    android:background="#292929"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Email"
-                        android:textColor="@color/white"/>
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:text="✉️"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="sarah@school.edu"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="#292929"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:text="sarah@school.edu"/>
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:text="📞"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="+1 (555) 987-6547"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="#292929"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:text="🏫"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Institution"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="University of Oxford"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#292929"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:text="🛡️"
+                        android:textSize="18dp"
+                        android:gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Role"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Admin"/>
+                    </LinearLayout>
+
                 </LinearLayout>
 
             </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="#292929"
-            android:layout_marginBottom="5dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp">
 
-            <TextView
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:text="📞"
-                android:textSize="18dp"
-                android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Notifications"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:orientation="vertical"
+                android:background="#1d1d1d"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:orientation="horizontal"
                 android:gravity="center_vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="40dp"
                     android:layout_height="wrap_content"
-                    android:text="Phone"
-                    android:textColor="@color/white"/>
+                    android:paddingLeft="15dp"
+                    android:text="🔔"
+                    android:gravity="center"/>
 
-                <TextView
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Push Notification"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Receive alerts on your device"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="+1 (555) 987-6547"/>
+                    android:layout_marginEnd="8dp"
+                    android:checked="true" />
+
             </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="#292929"
-            android:layout_marginBottom="5dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:text="🏫"
-                android:textSize="18dp"
-                android:gravity="center"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:orientation="vertical"
+                android:background="#1d1d1d"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:orientation="horizontal"
                 android:gravity="center_vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="40dp"
                     android:layout_height="wrap_content"
-                    android:text="Institution"
-                    android:textColor="@color/white"/>
+                    android:paddingLeft="15dp"
+                    android:text="✉️"
+                    android:gravity="center"/>
 
-                <TextView
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email Notification"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Receive updates via email"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"/>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="University of Oxford"/>
+                    android:layout_marginEnd="8dp"
+                    android:checked="true" />
+
             </LinearLayout>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginBottom="5dp"
-            android:background="#292929"
-            android:orientation="horizontal">
+    </ScrollView>
 
-            <TextView
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:text="🛡️"
-                android:textSize="18dp"
-                android:gravity="center"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:orientation="vertical"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Role"
-                    android:textColor="@color/white"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="Admin"/>
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
+    <!-- BOTTOM NAVIGATION -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="10dp">
+        android:layout_height="65dp"
+        android:background="#1D1D1D"
+        android:orientation="horizontal"
+        android:gravity="center">
 
-        <TextView
-            android:layout_width="match_parent"
+        <!-- Home -->
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Notifications"
-            android:textColor="@color/white"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="#1d1d1d"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
-
-        <TextView
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:text="🔔"
-            android:gravity="center"/>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Push Notification"
-                android:textColor="@color/white"
-                android:textSize="13dp"/>
+                android:text="⌂"
+                android:textColor="#AAAAAA"
+                android:textSize="20sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Receive alerts on your device"
-                android:textColor="@color/white"
-                android:textSize="10dp"/>
-
+                android:text="Home"
+                android:textColor="#AAAAAA"
+                android:textSize="10sp"/>
         </LinearLayout>
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:checked="true" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="#1d1d1d"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
-
-        <TextView
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:text="✉️"
-            android:gravity="center"/>
-
+        <!-- Map -->
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email Notification"
-                android:textColor="@color/white"
-                android:textSize="13dp"/>
+                android:text="⌖"
+                android:textColor="#AAAAAA"
+                android:textSize="20sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Receive updates via email"
-                android:textColor="@color/white"
-                android:textSize="10dp"/>
+                android:text="Map"
+                android:textColor="#AAAAAA"
+                android:textSize="10sp"/>
         </LinearLayout>
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:checked="true" />
+        <!-- Manage -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▣"
+                android:textColor="#AAAAAA"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage"
+                android:textColor="#AAAAAA"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <!-- Report -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▤"
+                android:textColor="#AAAAAA"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report"
+                android:textColor="#AAAAAA"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <!-- Profile -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="●"
+                android:textColor="#A855F7"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="#A855F7"
+                android:textSize="10sp"/>
+        </LinearLayout>
 
     </LinearLayout>
 
