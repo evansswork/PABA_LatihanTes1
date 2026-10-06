@@ -5,31 +5,69 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5pt"
-        android:paddingLeft="58pt"
-        android:text="Profile" />
-
     <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp">
 
+        <!--Arrow back-->
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="14dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+        <!--Profile Tulisan-->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Halo"
-
-
-            />
-
-
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:gravity="center"/>
     </FrameLayout>
 
+    <!--  Gambar  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#7B4AB5">
 
+        <!--  Foto      -->
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/profilecard"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_image"
+            android:clipToOutline="true"/>
 
+        <!--  Nama      -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="Albert Einstein"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
 
+        <!--  Bidang      -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Ilmu Fisika dan Kebumian"
+            android:textSize="11dp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </LinearLayout>
 </LinearLayout>
